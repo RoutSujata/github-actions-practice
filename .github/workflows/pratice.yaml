@@ -10,3 +10,4 @@ jobs:
           run: |
             echo "Environment is val"
             echo "Base URL is ${{ vars.APP_BASE_URL }}"
+            
