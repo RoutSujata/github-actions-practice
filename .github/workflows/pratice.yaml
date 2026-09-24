@@ -1,0 +1,12 @@
+name: My Pratice Workflow
+on:
+  workflow_dispatch:
+jobs:
+  pratice-job:
+      runs-on: ubuntu-latest
+      environment: val
+      steps:
+        - name: Check val environment
+          run: |
+            echo "Environment is val"
+            echo "Base URL is ${{ vars.APP_BASE_URL }}"
