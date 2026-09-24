@@ -10,4 +10,9 @@ jobs:
           run: |
             echo "Environment is val"
             echo "Base URL is ${{ vars.APP_BASE_URL }}"
+        - name: Check secret
+          run: |
+           if [ -n "${{ secrets.TEST_PASSWORD }}" ]; then
+           echo "TEST_PASSWORD secret is available"
+           fi
             
